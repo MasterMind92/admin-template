@@ -5,6 +5,8 @@ import Users from "./pages/UsersIndex";
 import UserForm from "./pages/UsersForm";
 import Clients from "./pages/Clients";
 import ClientForm from "./components/ClientForm";
+import { Login } from "./pages/Login";
+import Appartement from "./pages/Appartement";
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
           <Route path="users/add" element={<UserForm />} />
           <Route path="clients" element={<Clients />} />
           <Route path="clients/add" element={<ClientForm />} />
+          <Route path="login" element={<Login />} />
+          <Route path="appartements" element={<Appartement />} />
         </Route>
       </Routes>
     </BrowserRouter>

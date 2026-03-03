@@ -21,7 +21,7 @@ export default function Sidebar() {
         </li>
 
         <li className="nav-item">
-          <Link className="nav-link text-white" to="/">
+          <Link className="nav-link text-white" to="/appartements">
             <FontAwesomeIcon icon={faHome} /> Appartements
           </Link>
         </li>

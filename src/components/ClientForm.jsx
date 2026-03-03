@@ -16,12 +16,12 @@ const ClientSchema = Yup.object().shape({
 
 const ClientForm = () => {
   return (
-    <div className="container-fluid mt-4">
+    <div className="container mt-4">
       <div className="row">
         <div className="col-12">
           <div className="card shadow-lg border-0">
-            <div className="card-header bg-dark text-white">
-              <h5 className="mb-0">Gestion des Clients</h5>
+            <div className="card-header bg-primary text-white">
+              <h3 className="my-2 text-center">Gestion des Clients</h3>
             </div>
 
             <div className="card-body">
@@ -122,9 +122,8 @@ const ClientForm = () => {
                       <div className="col-12">
                         <label className="form-label">Adresse</label>
                         <Field
-                          as="textarea"
-                          name="adresse"
-                          rows="2"
+                          type="text"
+                          name="adresse"                                                                                                 
                           className="form-control"
                         />
                       </div>
