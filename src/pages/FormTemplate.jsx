@@ -18,9 +18,9 @@ export default function UserForm(){
 
                     <div className="col-12 col-md-6 col-lg-8">
                         <h2 className="mb-4">Ajout Utilisateurs</h2>
-                        <div class="card">
+                        <div className=card">
                             
-                            <div class="card-body">
+                            <div className=card-body">
                                 <form action="" method="POST" role="form">
 
                                     {/* <legend>Ajout Utilisateur</legend> */}

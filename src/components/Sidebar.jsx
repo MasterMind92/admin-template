@@ -1,63 +1,72 @@
-import { Link } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 // Import the specific icon you need (e.g., a coffee mug)
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faList, faUser,faUsers, faHome, faDollar, faArrowDown, faGear, faFileInvoice } from '@fortawesome/free-solid-svg-icons';
 
 export default function Sidebar() {
+
+    // Style function for active links
+const navLinkStyles = ({ isActive }) => ({
+    color: isActive ? '#333' : '#fff',
+    fontWeight: isActive ? 'bold' : 'normal',
+    background: isActive ? '#fff' : 'rgb(33, 37, 41)',
+    padding: '5px 10px'
+});
+
   return (
-    <div className="bg-dark text-white p-3" style={{ width: "250px" }}>
+    <div className="bg-dark p-3" style={{ width: "250px" }}>
       <h4 className="text-center mb-4">Admin Panel</h4>
 
       <ul className="nav flex-column">
         <li className="nav-item">
-          <Link className="nav-link text-white" to="/">
+          <NavLink  style={navLinkStyles} className="nav-link">
             <FontAwesomeIcon icon={faList} />  Dashboard
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link className="nav-link text-white" to="/clients">
+          <NavLink  style={navLinkStyles} className="nav-link" to="clients">
             <FontAwesomeIcon icon={faUsers} /> Clients
-          </Link>
+          </NavLink>
         </li>
 
         <li className="nav-item">
-          <Link className="nav-link text-white" to="/appartements">
+          <NavLink  style={navLinkStyles} className="nav-link" to="appartements">
             <FontAwesomeIcon icon={faHome} /> Appartements
-          </Link>
+          </NavLink>
         </li>
 
         <li className="nav-item">
-          <Link className="nav-link text-white" to="/">
+          <NavLink  style={navLinkStyles} className="nav-link" to="/">
             <FontAwesomeIcon icon={faList} /> Reservations
-          </Link>
+          </NavLink>
         </li>
 
         <li className="nav-item">
-          <Link className="nav-link text-white" to="/">
+          <NavLink  style={navLinkStyles} className="nav-link" to="/">
             <FontAwesomeIcon icon={faDollar} /> Factures
-          </Link>
+          </NavLink>
         </li>
 
         <li className="nav-item">
-          <Link className="nav-link text-white" to="/">
+          <NavLink  style={navLinkStyles} className="nav-link" to="/">
             <FontAwesomeIcon icon={faFileInvoice} /> Inventaire
-          </Link>
+          </NavLink>
         </li>
 
         <li className="nav-item">
-          <Link className="nav-link text-white" to="/">
+          <NavLink  style={navLinkStyles} className="nav-link" to="/">
             <FontAwesomeIcon icon={faArrowDown} /> Promotion
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link className="nav-link text-white" to="/users">
+          <NavLink  style={navLinkStyles} className="nav-link" to="users">
             <FontAwesomeIcon icon={faUser} /> Utilisateurs
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link className="nav-link text-white" to="/">
+          <NavLink  style={navLinkStyles} className="nav-link" to="/">
             <FontAwesomeIcon icon={faGear} /> Parametres
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </div>

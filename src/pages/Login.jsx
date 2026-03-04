@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 export function Login(){
@@ -28,9 +29,9 @@ export function Login(){
 
                                         <div className="form-group row justify-content-between mb-3">
                                             <div className="col">
-                                                <div class="form-check">
-                                                  <label class="form-check-label">
-                                                    <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked />
+                                                <div className="form-check">
+                                                  <label className="form-check-label">
+                                                    <input type="checkbox" className="form-check-input" name="" id="" value="checkedValue" checked />
                                                     Se souvenir de moi
                                                   </label>
                                                 </div>
@@ -42,12 +43,12 @@ export function Login(){
 
                                         <div className="form-group row justify-content-center">
                                             <div className="col-12">
-                                                <div className="d-grid gap-2">
-                                                    <button className="btn btn-primary" type="submit">Valider</button>
-                                                </div>
-
+                                                <Link to="admin">
+                                                    <div className="d-grid gap-2">
+                                                        <button className="btn btn-primary" type="submit">Valider</button>
+                                                    </div>
+                                                </Link>
                                             </div>
-
                                         </div>
                                     </form>
                                     

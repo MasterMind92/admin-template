@@ -60,9 +60,9 @@ export default function UserForm(){
 
                     <div className="col-12 col-md-6 col-lg-8">
                         <h2 className="mb-4">Ajout Utilisateurs</h2>
-                        <div class="card">
+                        <div className="card">
                             
-                            <div class="card-body">
+                            <div className="card-body">
                                 <form action="" onSubmit={handleSubmit} method="POST" role="form">
 
                                     {/* <legend>Ajout Utilisateur</legend> */}
@@ -128,7 +128,7 @@ export default function UserForm(){
 
                                         <div className="col-12 col-md-3">
                                             
-                                            <div class="d-grid gap-2">
+                                            <div className="d-grid gap-2">
                                             <button
                                                 type="submit"
                                                 name=""
@@ -142,7 +142,7 @@ export default function UserForm(){
 
                                         <div className="col-12 col-md-3">
                                             
-                                            <div class="d-grid gap-2">
+                                            <div className="d-grid gap-2">
                                             <button
                                                 type="submit"
                                                 name=""

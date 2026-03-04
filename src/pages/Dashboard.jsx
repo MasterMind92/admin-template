@@ -13,7 +13,7 @@ export default function Dashboard() {
                 <div className="card-body">
                 <h5>Total Appartements</h5>
                 <h3>120</h3>
-                    <a name="" id="" class="btn btn-warning" href="#" role="button"> <FontAwesomeIcon icon={faEye} />  Voir</a>
+                    <a name="" id="" className="btn btn-warning" href="#" role="button"> <FontAwesomeIcon icon={faEye} />  Voir</a>
                 </div>
             </div>
             </div>
@@ -23,7 +23,7 @@ export default function Dashboard() {
                 <div className="card-body">
                 <h5>Reservations en attente</h5>
                 <h3>5</h3>
-                <a name="" id="" class="btn btn-warning" href="#" role="button"> <FontAwesomeIcon icon={faEye} />  Voir</a>
+                <a name="" id="" className="btn btn-warning" href="#" role="button"> <FontAwesomeIcon icon={faEye} />  Voir</a>
                 </div>
             </div>
             </div>
@@ -33,7 +33,7 @@ export default function Dashboard() {
                 <div className="card-body">
                 <h5>Reservations validées</h5>
                 <h3>10</h3>
-                <a name="" id="" class="btn btn-success" href="#" role="button"> <FontAwesomeIcon icon={faEye} />  Voir</a>
+                <a name="" id="" className="btn btn-success" href="#" role="button"> <FontAwesomeIcon icon={faEye} />  Voir</a>
                 </div>
             </div>
             </div>
@@ -44,7 +44,7 @@ export default function Dashboard() {
                 <div className="card-body">
                 <h5>Total Clients</h5>
                 <h3>120</h3>
-                    <a name="" id="" class="btn btn-info" href="#" role="button"> <FontAwesomeIcon icon={faEye} />  Voir</a>
+                    <a name="" id="" className="btn btn-info" href="#" role="button"> <FontAwesomeIcon icon={faEye} />  Voir</a>
 
                 </div>
             </div>
@@ -55,7 +55,7 @@ export default function Dashboard() {
                     <div className="card-body">
                     <h5>Clients en attente</h5>
                     <h3>5</h3>
-                    <a name="" id="" class="btn btn-warning" href="#" role="button"> <FontAwesomeIcon icon={faEye} />  Voir</a>
+                    <a name="" id="" className="btn btn-warning" href="#" role="button"> <FontAwesomeIcon icon={faEye} />  Voir</a>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@ export default function Dashboard() {
                     <div className="card-body">
                     <h5>Clients validées</h5>
                     <h3>10</h3>
-                    <a name="" id="" class="btn btn-success" href="#" role="button"> <FontAwesomeIcon icon={faEye} />  Voir</a>
+                    <a name="" id="" className="btn btn-success" href="#" role="button"> <FontAwesomeIcon icon={faEye} />  Voir</a>
                     </div>
                 </div>
             </div>

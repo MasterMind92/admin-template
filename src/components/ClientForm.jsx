@@ -21,7 +21,7 @@ const ClientForm = () => {
         <div className="col-12">
           <div className="card shadow-lg border-0">
             <div className="card-header bg-primary text-white">
-              <h3 className="my-2 text-center">Gestion des Clients</h3>
+              <h3 className="my-2 text-center">Formulaire Clients</h3>
             </div>
 
             <div className="card-body">
