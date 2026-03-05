@@ -3,6 +3,8 @@ import TableHeader from "../components/TableHeader";
 import TableRows from "../components/TableRows";
 import TableRowsClient from "../components/TableRowsClient";
 import TableRowsAppart from "../components/TableRowsAppart";
+import TableRowsReserv from "../components/TableRowsReserv";
+
 
 export default function TableLayout(props) {
     
@@ -18,6 +20,10 @@ export default function TableLayout(props) {
 
         if(props.acteur == "appartement"){
             return <TableRowsAppart data={props.row} />;
+        }
+
+        if(props.acteur == "reservation"){
+            return <TableRowsReserv data={props.row} />;
         }
 
         return <TableRows data={props.row} />;
