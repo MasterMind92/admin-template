@@ -7,6 +7,9 @@ import Clients from "./pages/Clients";
 import ClientForm from "./components/ClientForm";
 import { Login } from "./pages/Login";
 import Appartement from "./pages/Appartement";
+import Reservation from "./pages/Reservation";
+import ReservationForm from "./components/ReservationForm";
+import AppartementForm from "./components/AppartementForm";
 
 
 function App() {
@@ -21,6 +24,9 @@ function App() {
           <Route path="clients" element={<Clients />} />
           <Route path="clients/add" element={<ClientForm />} />
           <Route path="appartements" element={<Appartement />} />
+          <Route path="appartements/add" element={<AppartementForm />} />
+          <Route path="reservations" element={<Reservation />} />
+          <Route path="reservations/add" element={<ReservationForm />} />
         </Route>
       </Routes>
     </BrowserRouter>

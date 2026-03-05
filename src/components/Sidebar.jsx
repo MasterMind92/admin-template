@@ -36,7 +36,7 @@ const navLinkStyles = ({ isActive }) => ({
         </li>
 
         <li className="nav-item">
-          <NavLink  style={navLinkStyles} className="nav-link" to="/">
+          <NavLink  style={navLinkStyles} className="nav-link" to="reservations">
             <FontAwesomeIcon icon={faList} /> Reservations
           </NavLink>
         </li>
