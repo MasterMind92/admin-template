@@ -54,7 +54,7 @@ const navLinkStyles = ({ isActive }) => ({
         </li>
 
         <li className="nav-item">
-          <NavLink  style={navLinkStyles} className="nav-link" to="/">
+          <NavLink  style={navLinkStyles} className="nav-link" to="promotion">
             <FontAwesomeIcon icon={faArrowDown} /> Promotion
           </NavLink>
         </li>

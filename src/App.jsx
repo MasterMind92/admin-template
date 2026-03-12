@@ -14,6 +14,9 @@ import Facture from "./pages/Facture";
 import FactureForm from "./components/FactureForm";
 import Inventaire from "./pages/Inventaire";
 import InventaireForm from "./components/InventaireForm";
+import PromotionForm from "./components/PromotionForm";
+import Promotion from "./pages/Promotion";
+
 
 
 
@@ -27,8 +30,8 @@ function App() {
           <Route index element={<Dashboard />} />
           <Route path="inventaire" element={<Inventaire />} />
           <Route path="inventaire/add" element={<InventaireForm />} />
-          <Route path="promotion" element={<Facture />} />
-          <Route path="promotion/add" element={<Facture />} />
+          <Route path="promotion" element={<Promotion />} />
+          <Route path="promotion/add" element={<PromotionForm />} />
           <Route path="facture" element={<Facture />} />
           <Route path="facture/add" element={<FactureForm />} />
           <Route path="users" element={<Users />} />
