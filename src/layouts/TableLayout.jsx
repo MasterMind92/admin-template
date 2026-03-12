@@ -4,6 +4,7 @@ import TableRows from "../components/TableRows";
 import TableRowsClient from "../components/TableRowsClient";
 import TableRowsAppart from "../components/TableRowsAppart";
 import TableRowsReserv from "../components/TableRowsReserv";
+import TableRowsFacture from "../components/TableRowsfacture";
 
 
 export default function TableLayout(props) {
@@ -24,6 +25,10 @@ export default function TableLayout(props) {
 
         if(props.acteur == "reservation"){
             return <TableRowsReserv data={props.row} />;
+        }
+
+        if(props.acteur == "facture"){
+            return <TableRowsFacture data={props.row} />;
         }
 
         return <TableRows data={props.row} />;

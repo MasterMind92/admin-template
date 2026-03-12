@@ -10,6 +10,9 @@ import Appartement from "./pages/Appartement";
 import Reservation from "./pages/Reservation";
 import ReservationForm from "./components/ReservationForm";
 import AppartementForm from "./components/AppartementForm";
+import Facture from "./pages/Facture";
+import FactureForm from "./components/FactureForm";
+
 
 
 function App() {
@@ -19,7 +22,9 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="admin" element={<AdminLayout />}>
           <Route index element={<Dashboard />} />
-          <Route path="users" element={<Users title="Utilisateurs"/>} />
+          <Route path="facture" element={<Facture />} />
+          <Route path="facture/add" element={<FactureForm />} />
+          <Route path="users" element={<Users />} />
           <Route path="users/add" element={<UserForm />} />
           <Route path="clients" element={<Clients />} />
           <Route path="clients/add" element={<ClientForm />} />
