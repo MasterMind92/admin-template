@@ -12,6 +12,9 @@ import ReservationForm from "./components/ReservationForm";
 import AppartementForm from "./components/AppartementForm";
 import Facture from "./pages/Facture";
 import FactureForm from "./components/FactureForm";
+import Inventaire from "./pages/Inventaire";
+import InventaireForm from "./components/InventaireForm";
+
 
 
 
@@ -22,6 +25,10 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="admin" element={<AdminLayout />}>
           <Route index element={<Dashboard />} />
+          <Route path="inventaire" element={<Inventaire />} />
+          <Route path="inventaire/add" element={<InventaireForm />} />
+          <Route path="promotion" element={<Facture />} />
+          <Route path="promotion/add" element={<Facture />} />
           <Route path="facture" element={<Facture />} />
           <Route path="facture/add" element={<FactureForm />} />
           <Route path="users" element={<Users />} />
