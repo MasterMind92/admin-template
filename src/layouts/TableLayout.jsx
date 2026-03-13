@@ -4,7 +4,7 @@ import TableRows from "../components/TableRows";
 import TableRowsClient from "../components/TableRowsClient";
 import TableRowsAppart from "../components/TableRowsAppart";
 import TableRowsReserv from "../components/TableRowsReserv";
-import TableRowsFacture from "../components/TableRowsfacture";
+import TableRowsFacture from "../components/TableRowsFacture";
 import TableRowsInventaire from "../components/TableRowsInventaire";
 import TableRowsPromo from "../components/TableRowsPromo";
 
